@@ -117,14 +117,14 @@ function Cycle_Tag_Back() {
 }
 
 function updateTagArrows() {
-  document.getElementById("left-tag-arrow").innerHTML="<img src=\"../assets/Left%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Tag_Back()\"style=\"filter:invert(75%);cursor:pointer\">"
-            document.getElementById("right-tag-arrow").innerHTML= "<img src=\"../assets/Right%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Tag_Forward()\"style=\"filter:invert(75%);cursor:pointer\">"
+  document.getElementById("left-tag-arrow").innerHTML="<img src=\"./Assets/Left%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Tag_Back()\"style=\"filter:invert(75%);cursor:pointer\">"
+            document.getElementById("right-tag-arrow").innerHTML= "<img src=\"./Assets/Right%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Tag_Forward()\"style=\"filter:invert(75%);cursor:pointer\">"
 
   if (currentTagIndex == 0) {
-    document.getElementById("left-tag-arrow").innerHTML="<img src=\"../assets/Left%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Tag_Back()\"style=\"filter:invert(25%);cursor:auto\">"
+    document.getElementById("left-tag-arrow").innerHTML="<img src=\"./Assets/Left%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Tag_Back()\"style=\"filter:invert(25%);cursor:auto\">"
   }
   if (currentTagIndex >= (tagCategories.length - 5)) {
-    document.getElementById("right-tag-arrow").innerHTML= "<img src=\"../assets/Right%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Tag_Forward()\"style=\"filter:invert(25%);cursor:auto\">"
+    document.getElementById("right-tag-arrow").innerHTML= "<img src=\"./Assets/Right%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Tag_Forward()\"style=\"filter:invert(25%);cursor:auto\">"
   }
 }
 

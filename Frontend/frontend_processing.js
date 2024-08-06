@@ -9,7 +9,7 @@
     this.review_count = review_count;
     this.rating = rating;
     this.hero_capsule_link = "https://cdn.cloudflare.steamstatic.com/steam/apps/" + id + "/hero_capsule.jpg";
-    this.hero_capsule_link = "../Assets/loading.png"; 
+    this.hero_capsule_link = "./Assets/loading.png"; 
 
     this.setHeroCapsuleLink("https://cdn.cloudflare.steamstatic.com/steam/apps/" + id + "/hero_capsule.jpg")
     .then(result => {
@@ -17,7 +17,7 @@
 })
     .catch(error => {
     console.error('Error setting hero capsule link:', error);
-    this.hero_capsule_link = "../Assets/no_preview.png";
+    this.hero_capsule_link = "./Assets/no_preview.png";
 });
 }
 
@@ -26,14 +26,14 @@
     fetch(url)
     .then(response => {
     if (!response.ok) {
-    resolve("../Assets/no_preview.png");
+    resolve("./Assets/no_preview.png");
 } else {
     resolve(url);
 }
 })
     .catch(error => {
     console.error('Fetch operation failed:', error);
-    resolve("../Assets/no_preview.png");
+    resolve("./Assets/no_preview.png");
 });
 });
 }
@@ -47,7 +47,7 @@
         var i = 0;
         var games = [];
         var generated = false;
-        var ducktor_frame = "../Assets/Ducktor Idle (Draft).png";
+        var ducktor_frame = "./Assets/Ducktor Idle (Draft).png";
         function Cycle_Forward() {
             if (i == (returned_recommendation_count - 5) || !generated) {
         } else {
@@ -87,13 +87,13 @@
                 }
             
         }
-            document.getElementById("left_arrow").innerHTML="<img src=\"../assets/Left%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Back()\"style=\"filter:invert(75%);cursor:pointer\">"
-            document.getElementById("right_arrow").innerHTML= "<img src=\"../assets/Right%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Forward()\"style=\"filter:invert(75%);cursor:pointer\">"
+            document.getElementById("left_arrow").innerHTML="<img src=\"./assets/Left%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Back()\"style=\"filter:invert(75%);cursor:pointer\">"
+            document.getElementById("right_arrow").innerHTML= "<img src=\"./assets/Right%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Forward()\"style=\"filter:invert(75%);cursor:pointer\">"
             if (i == 0) {
-            document.getElementById("left_arrow").innerHTML="<img src=\"../assets/Left%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Back()\"style=\"filter:invert(25%);cursor:auto\">"
+            document.getElementById("left_arrow").innerHTML="<img src=\"./assets/Left%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Back()\"style=\"filter:invert(25%);cursor:auto\">"
         }
             if (i == returned_recommendation_count - 5) {
-            document.getElementById("right_arrow").innerHTML= "<img src=\"../assets/Right%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Forward()\"style=\"filter:invert(25%);cursor:auto\">"
+            document.getElementById("right_arrow").innerHTML= "<img src=\"./Assets/Right%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Forward()\"style=\"filter:invert(25%);cursor:auto\">"
         }
 
         }
@@ -153,9 +153,9 @@
             current_line = line;
         }
 
-            document.getElementById("duck").innerHTML = "<img src=\"../assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: flex;\"> " +
-            "<img src=\"../assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: none;\">"
-            document.getElementById("speech_bubble_wrapper").innerHTML = "<div class=\"speech_bubble\" id=\"bubble\" onclick=\"Cycle_Line()\"><img src=\"../Assets/Speech%20Bubble.png\" style=\"visibility:visible\" draggable=\"false\"><p></p></div>"
+            document.getElementById("duck").innerHTML = "<img src=\"./Assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: flex;\"> " +
+            "<img src=\"./Assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: none;\">"
+            document.getElementById("speech_bubble_wrapper").innerHTML = "<div class=\"speech_bubble\" id=\"bubble\" onclick=\"Cycle_Line()\"><img src=\"./Assets/Speech%20Bubble.png\" style=\"visibility:visible\" draggable=\"false\"><p></p></div>"
 
             Speak_Line()
         }
@@ -164,8 +164,8 @@
 
         function End_Speech() {
 
-            document.getElementById("duck").innerHTML = "<img src=\"../assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
-                "<img src=\"../assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
+            document.getElementById("duck").innerHTML = "<img src=\"./Assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
+                "<img src=\"./Assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
                 document.getElementById("speech_bubble_wrapper").innerHTML = ""
 
             current_line = null
@@ -200,8 +200,8 @@
         } else if (greeting == 2) {
             greeting_line = greeting_1_2;
         }
-            document.getElementById("duck").innerHTML = "<img src=\"../assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
-            "<img src=\"../assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
+            document.getElementById("duck").innerHTML = "<img src=\"./Assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
+            "<img src=\"./Assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
 
             Begin_Speech(greeting_line);
         }
@@ -213,12 +213,12 @@
         } else if (current_line.next_line == null) {
             End_Speech();
         } else {
-            document.getElementById("duck").innerHTML = "<img src=\"../assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
-            "<img src=\"../assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
-            document.getElementById("bubble").innerHTML = "<img src=\"../assets/Speech%20Bubble.png\" style=\"visibility:hidden\" draggable=\"false\"> <p> </p>"
+            document.getElementById("duck").innerHTML = "<img src=\"./Assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
+            "<img src=\"./Assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
+            document.getElementById("bubble").innerHTML = "<img src=\"./Assets/Speech%20Bubble.png\" style=\"visibility:hidden\" draggable=\"false\"> <p> </p>"
             await Wait(100);
-            document.getElementById("duck").innerHTML = "<img src=\"../assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: flex;\"> " +
-            "<img src=\"../assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: none;\">"
+            document.getElementById("duck").innerHTML = "<img src=\"./Assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: flex;\"> " +
+            "<img src=\"./Assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: none;\">"
             current_line = current_line.next_line
             Speak_Line();
         }
@@ -226,7 +226,7 @@
 
         function Speak_Line() {
 
-            document.getElementById("bubble").innerHTML = "<img src=\"../assets/Speech%20Bubble.png\" draggable=\"false\">" + "<p style='cursor:pointer'>" + current_line.text + "</p>"
+            document.getElementById("bubble").innerHTML = "<img src=\"./Assets/Speech%20Bubble.png\" draggable=\"false\">" + "<p style='cursor:pointer'>" + current_line.text + "</p>"
 
             if (current_line.next_line == null && current_line.repeatable == false && current_line.beginning != null) {
                 current_line.beginning.repeatable = false;

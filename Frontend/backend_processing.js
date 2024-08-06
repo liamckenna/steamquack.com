@@ -133,12 +133,12 @@
     try {
     const response = fetch(url);
     if (!response.ok) {
-    return "../Assets/no_preview.png";
+    return "./Assets/no_preview.png";
 }
     return url;
 } catch (error) {
     console.error('Fetch operation failed:', error);
-    return "../Assets/no_preview.png";
+    return "./Assets/no_preview.png";
 }
 }
 
