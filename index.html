@@ -1,7 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+  <link rel="stylesheet" href="test.css">
+  <title>Steam Quackkkk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+</head>
+<body onload="Load_Site()">
+
+<div class="pharmacy_side" draggable="false">
+  <div class="pharmacy_sign" draggable="false">
+    <img src="./Assets/pharmacy sign.png" draggable="false">
+  </div>
+  <div class="duck_area" id="duck" draggable="false">
+    <img src="./Assets/Ducktor%20Mouth%20Open%20(Draft).png" draggable="false" style="display: flex;">
+    <img src="./Assets/Ducktor%20Idle%20(Draft).png" draggable="false" style="display: none;">
+  </div>
+</div>
+
+<div class="menu-wrapper">
+  <div class="menu" id="menu" style="visibility: hidden;">
+    <div class="profile-section">
+      <div class="name-section" id="name_area">
+        2011 Aaron Rodgers (stephen)
+      </div>
+      <div class="profile-pic-container">
+        <img id="profile-pic" alt="Profile Picture" class="profile-pic" src="./Assets/Placeholder_Profile_Icon.jpg">
+      </div>
+    </div>
+    <div class="tag-carousel-label">Your Top Tags</div>
+    <div class="tag-carousel-wrapper">
+      <div class="tag-carousel">
+        <div class="arrow-column" style="float:left">
+          <div class="arrow-area" id="left-tag-arrow" style="visibility: hidden">
+            <img src="./Assets/Left%20Arrow.png" draggable="false"  onclick="Cycle_Tag_Back()">
+          </div>
+        </div>
+        <ol class="tag-row" id="tag-list">
+          <!-- Tag categories and tags will be generated dynamically -->
+        </ol>
+        <div class="arrow-column" style="float:right">
+          <div class="arrow-area" id="right-tag-arrow" style="visibility: hidden">
+            <img src="./Assets/Right%20Arrow.png" draggable="false" onclick="Cycle_Tag_Forward()">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="options">
+  <div class="input-container">
+    <input type="text" id="id_input" onclick="Options_Dialogue(1)" placeholder="Profile Name/URL">
+    <div class="name_check_button" onclick="callCheckProfileInput()">
+      🔎︎
+    </div>
+  </div>
+  <div class="settings-container">
+    <div class="slider-container">
+      <div class="numerical_slider">
+        <label for="review_percent_threshold">Min Review Percent</label>
+        <div class="slider_container">
+          <input style="width: 75%" type="range" id="review_percent_threshold" name="review_percent_threshold" min="0" max="100" step="1" value="80" oninput="updateSetting(this)">
+          <span id="review_percent_threshold_value">80%</span>
+        </div>
+      </div>
+      <div class="numerical_slider">
+        <label for="review_threshold">Min Review Count</label>
+        <div class="slider_container">
+          <input style="width: 75%" type="range" id="review_threshold" name="review_threshold" min="100" max="10000" step="100" value="100" oninput="updateSetting(this)">
+          <span id="review_threshold_value">100</span>
+        </div>
+      </div>
+      <div class="numerical_slider">
+        <label for="maximum_price">Max Price</label>
+        <div class="slider_container">
+          <input style="width: 80%" type="range" id="maximum_price" name="maximum_price" min="0" max="70" step="1" value="70" oninput="updateSetting(this)">
+          <span id="maximum_price_value">$70</span>
+        </div>
+      </div>
+      <div class="slider">
+        <label for="super_genres">Super Genres</label>
+        <div class="slider_container">
+          <input type="range" id="super_genres" name="super_genres" min="0" max="1" step="0.01" value="0.1" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="genres">Genres</label>
+        <div class="slider_container">
+          <input type="range" id="genres" name="genres" min="0" max="1" step="0.01" value="0.25" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="sub_genres">Sub Genres</label>
+        <div class="slider_container">
+          <input type="range" id="sub_genres" name="sub_genres" min="0" max="1" step="0.01" value="0.5" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="visuals_and_viewpoint">Visuals and Viewpoint</label>
+        <div class="slider_container">
+          <input type="range" id="visuals_and_viewpoint" name="visuals_and_viewpoint" min="0" max="1" step="0.01" value="0.25" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="themes_and_moods">Themes and Moods</label>
+        <div class="slider_container">
+          <input type="range" id="themes_and_moods" name="themes_and_moods" min="0" max="1" step="0.01" value="0.25" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="features">Features</label>
+        <div class="slider_container">
+          <input type="range" id="features" name="features" min="0" max="1" step="0.01" value="0.25" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="players">Players</label>
+        <div class="slider_container">
+          <input type="range" id="players" name="players" min="0" max="1" step="0.01" value="0.25" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="assessments">Assessments</label>
+        <div class="slider_container">
+          <input type="range" id="assessments" name="assessments" min="0" max="1" step="0.01" value="0.1" oninput="updateSetting(this)">
+        </div>
+      </div>
+      <div class="slider">
+        <label for="recency">Recency</label>
+        <div class="slider_container">
+          <input type="range" id="recency" name="recency" min="0" max="1" step="0.01" value="0.5" oninput="updateSetting(this)">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="recommendation_generation_button_wrapper" id="recommendation_generation_button_wrapper">
+    <div class="recommendation_generation_button" id="recommendation_generation_button" onclick="callGeneratorWrapper()">
+      Give me recs
+    </div>
+  </div>
+  
+
+</div>
+
+<div class="row_container">
+  <div class="arrow_column" style="float:left">
+    <div class="arrow_area_p1">
+      <div class="arrow_area_p2" id="left_arrow">
+        <img src="./Assets/Left%20Arrow.png" draggable="false" style="visibility: hidden" onclick="Cycle_Back()">
+      </div>
+    </div>
+  </div>
+
+  <ol class="row" id="game list">
+    <li class="game_column" id="slot 1" style="margin-left: 0%; margin-right: 1.125%">
+      <div class="game_portrait" id="portrait">
+
+      </div>
+      <div class="game_name" id="name">
+
+      </div>
+    </li>
+    <li class="game_column" id="slot 2" style="margin-left: 1.125%; margin-right: 1.125%">
+      <div class="game_portrait">
+
+      </div>
+      <div class="game_name">
+
+      </div>
+    </li>
+    <li class="game_column" id="slot 3" style="margin-left: 1.125%; margin-right: 1.125%">
+      <div class="game_portrait">
+
+      </div>
+      <div class="game_name">
+
+      </div>
+    </li>
+    <li class="game_column" id="slot 4" style="margin-left: 1.125%; margin-right: 1.125%">
+      <div class="game_portrait">
+
+      </div>
+      <div class="game_name">
+
+      </div>
+    </li>
+    <li class="game_column" id="slot 5" style="margin-left: 1.125%; margin-right: 0%">
+      <div class="game_portrait">
+
+      </div>
+      <div class="game_name">
+
+      </div>
+    </li>
+  </ol>
+  <div class="arrow_column" style="float:right">
+    <div class="arrow_area_p1">
+      <div class="arrow_area_p2" id="right_arrow">
+        <img src="./Assets/Right%20Arrow.png" draggable="false" style="visibility: hidden" onclick="Cycle_Forward()">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="speech_bubble_wrapper">
+  <div class="speech_bubble" id="bubble" onclick="Cycle_Line()">
+    <img src="./Assets/Speech%20Bubble.png" style="visibility:visible" draggable="false">
+    <p>
+  
+    </p>
+  </div>
+</div>
+
+
+
 </body>
+
+<script src="./Frontend/backend_processing.js"></script>
+<script src="./Backend/SteamQuack.js"></script>
+<script src="./Frontend/frontend_processing.js"></script>
+<script src="./Frontend/tag_carousel.js"></script>
+<script src="./Frontend/dialogue.js"></script>
+
 </html>

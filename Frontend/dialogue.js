@@ -75,7 +75,7 @@
     //to-do
     
     var return_tags_3 = new Speech("");
-    const return_tags_2 = new Speech("take a look at ur top tag categoreys!", return_tags_3);
+    const return_tags_2 = new Speech("take a look at ur top tag categoreys!");
     const return_tags_1 = new Speech("iv lookd over ur profil... hear is my annalisis.", return_tags_2);
 
     const refresh_request = new Speech("sum thing went wrong. pleas refresh the page!");

@@ -10,11 +10,11 @@
 
 <div class="pharmacy_side" draggable="false">
   <div class="pharmacy_sign" draggable="false">
-    <img src="../Assets/pharmacy sign.png" draggable="false">
+    <img src="./Assets/pharmacy sign.png" draggable="false">
   </div>
   <div class="duck_area" id="duck" draggable="false">
-    <img src="../Assets/Ducktor%20Mouth%20Open%20(Draft).png" draggable="false" style="display: flex;">
-    <img src="../Assets/Ducktor%20Idle%20(Draft).png" draggable="false" style="display: none;">
+    <img src="./Assets/Ducktor%20Mouth%20Open%20(Draft).png" draggable="false" style="display: flex;">
+    <img src="./Assets/Ducktor%20Idle%20(Draft).png" draggable="false" style="display: none;">
   </div>
 </div>
 
@@ -25,7 +25,7 @@
         2011 Aaron Rodgers (stephen)
       </div>
       <div class="profile-pic-container">
-        <img id="profile-pic" alt="Profile Picture" class="profile-pic" src="../Assets/Placeholder_Profile_Icon.jpg">
+        <img id="profile-pic" alt="Profile Picture" class="profile-pic" src="./Assets/Placeholder_Profile_Icon.jpg">
       </div>
     </div>
     <div class="tag-carousel-label">Your Top Tags</div>
@@ -33,7 +33,7 @@
       <div class="tag-carousel">
         <div class="arrow-column" style="float:left">
           <div class="arrow-area" id="left-tag-arrow" style="visibility: hidden">
-            <img src="../Assets/Left%20Arrow.png" draggable="false"  onclick="Cycle_Tag_Back()">
+            <img src="./Assets/Left%20Arrow.png" draggable="false"  onclick="Cycle_Tag_Back()">
           </div>
         </div>
         <ol class="tag-row" id="tag-list">
@@ -41,7 +41,7 @@
         </ol>
         <div class="arrow-column" style="float:right">
           <div class="arrow-area" id="right-tag-arrow" style="visibility: hidden">
-            <img src="../Assets/Right%20Arrow.png" draggable="false" onclick="Cycle_Tag_Forward()">
+            <img src="./Assets/Right%20Arrow.png" draggable="false" onclick="Cycle_Tag_Forward()">
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@
   <div class="arrow_column" style="float:left">
     <div class="arrow_area_p1">
       <div class="arrow_area_p2" id="left_arrow">
-        <img src="../Assets/Left%20Arrow.png" draggable="false" style="visibility: hidden" onclick="Cycle_Back()">
+        <img src="./Assets/Left%20Arrow.png" draggable="false" style="visibility: hidden" onclick="Cycle_Back()">
       </div>
     </div>
   </div>
@@ -199,14 +199,14 @@
   <div class="arrow_column" style="float:right">
     <div class="arrow_area_p1">
       <div class="arrow_area_p2" id="right_arrow">
-        <img src="../Assets/Right%20Arrow.png" draggable="false" style="visibility: hidden" onclick="Cycle_Forward()">
+        <img src="./Assets/Right%20Arrow.png" draggable="false" style="visibility: hidden" onclick="Cycle_Forward()">
       </div>
     </div>
   </div>
 </div>
 <div id="speech_bubble_wrapper">
   <div class="speech_bubble" id="bubble" onclick="Cycle_Line()">
-    <img src="../Assets/Speech%20Bubble.png" style="visibility:visible" draggable="false">
+    <img src="./Assets/Speech%20Bubble.png" style="visibility:visible" draggable="false">
     <p>
   
     </p>
@@ -217,10 +217,10 @@
 
 </body>
 
-<script src="backend_processing.js"></script>
-<script src="../Backend/SteamQuack.js"></script>
-<script src="frontend_processing.js"></script>
-<script src="tag_carousel.js"></script>
-<script src="dialogue.js"></script>
+<script src="./Frontend/backend_processing.js"></script>
+<script src="./Backend/SteamQuack.js"></script>
+<script src="./Frontend/frontend_processing.js"></script>
+<script src="./Frontend/tag_carousel.js"></script>
+<script src="./Frontend/dialogue.js"></script>
 
 </html>
