@@ -7,29 +7,17 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCInformation.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeMinGWFindMake.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystem.cmake.in"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/Clang-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/Clang-CXX.cmake"
-  "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/Clang-FindBinUtils.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/Clang.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/GNU.cmake"
   "C:/Users/lmcmc/CLionProjects/GameRecommenderFromSteamProfile/CMakeLists.txt"
@@ -47,9 +35,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.30.1/CMakeSystem.cmake"
-  "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
