@@ -26,12 +26,12 @@
     const explanations_players_2 = new Speech("sum exampels wood be \"Singleplayer\", \"Local Multiplayer\", \"Online Co-Op\", etc.", null, false);
     const explanations_recency_2 = new Speech("krank it up if u dont wanna play old games!! or down if u dont cair.", null, false);
     const explanations_assessments_2 = new Speech("sownds dumb, i nowe, but i didnt make the ruels...", explanations_assessments_3);
-    const explanations_features_2 = new Speech("best way i can put it is, think of buzzwords youd find on the back of the box.", explanations_features_3);
+    const explanations_features_2 = new Speech("best way i can put it is, think of buzzwords youd find on the back of the box...", explanations_features_3);
     const explanations_themes_and_moods_2 = new Speech("think \"World War II\", \"Cyberpunk\", \"Tactical\", etc.", null, false);
     const explanations_visuals_and_viewpoint_2 = new Speech("for instanse, \"First-Person\", \"Voxel\", \"2D\", etc.", null, false);
-    const explanations_super_genres_2 = new Speech("thers only a few of them and there very impresise.", explanations_super_genres_3);
+    const explanations_super_genres_2 = new Speech("thers only a few of them and there very impresise...", explanations_super_genres_3);
     const explanations_genres_2 = new Speech("think basic, like \"Shooter\", \"Fighting\", \"Battle Royale\", etc.", null, false);
-    const explanations_sub_genres_2 = new Speech("thers alot of them, and there pretty importent to a games identee.", explanations_sub_genres_3);
+    const explanations_sub_genres_2 = new Speech("thers alot of them, and there pretty importent to a games identee...", explanations_sub_genres_3);
 
     //to-do
     
@@ -42,15 +42,15 @@
     
 
     //done
-    const explanations_players_1 = new Speech("the players tag refers too the number of players a game is ment to be playd with.", explanations_players_2);
-    const explanations_recency_1 = new Speech("the recency metrick is how inportant it is that the games releesed recentley.", explanations_recency_2);
-    const explanations_assessments_1 = new Speech("the assessments tag categorie consists of tags that userz use to describ the game.", explanations_assessments_2);
-    const explanations_features_1 = new Speech("feature tags r tags that discribe, well, features!", explanations_features_2);
-    const explanations_themes_and_moods_1 = new Speech("themes and mood tags r the ones that discribe the settings and core consepts of games", explanations_themes_and_moods_2);
-    const explanations_visuals_and_viewpoint_1 = new Speech("visuals and viewpoint refers to a games perspective n art style", explanations_visuals_and_viewpoint_2);
-    const explanations_super_genres_1 = new Speech("super genres are the tags that discribe the tipe of game in a realy broad way.", explanations_super_genres_2);
-    const explanations_genres_1 = new Speech("genre tags are farely strait forward. there the tags u probablie use to discribe games urself.", explanations_genres_2);
-    const explanations_sub_genres_1 = new Speech("sub genres realy get to the core of wat a game actualy is.", explanations_sub_genres_2);
+    const explanations_players_1 = new Speech("the players tag refers too the number of players a game is ment to be playd with...", explanations_players_2);
+    const explanations_recency_1 = new Speech("the recency metrick is how inportant it is that the games releesed recentley...", explanations_recency_2);
+    const explanations_assessments_1 = new Speech("the assessments tag categorie consists of tags that userz use to describ the game...", explanations_assessments_2);
+    const explanations_features_1 = new Speech("feature tags r tags that discribe, well, features!...", explanations_features_2);
+    const explanations_themes_and_moods_1 = new Speech("themes and mood tags r the ones that discribe the settings and core consepts of games...", explanations_themes_and_moods_2);
+    const explanations_visuals_and_viewpoint_1 = new Speech("visuals and viewpoint refers to a games perspective n art style...", explanations_visuals_and_viewpoint_2);
+    const explanations_super_genres_1 = new Speech("super genres are the tags that discribe the tipe of game in a realy broad way...", explanations_super_genres_2);
+    const explanations_genres_1 = new Speech("genre tags are farely strait forward. there the tags u probablie use to discribe games urself...", explanations_genres_2);
+    const explanations_sub_genres_1 = new Speech("sub genres realy get to the core of wat a game actualy is...", explanations_sub_genres_2);
 
     //to-do
     
@@ -94,7 +94,7 @@
 
     const complete_evaluation_1 = new Speech("yaayyyy i figyurd it owt!!!");
 
-    const perscription_1 = new Speech("i think thees mite do the trick. feel free to click on the pick churs if u wanna heer moar about them.");
+    const perscription_1 = new Speech("heres wat i got! click on the pick churs if u wanna heer moar about them, or double click to go to there steam store page.");
 
     const npf_steam_id_2 = new Speech("click the buton to the rite onse ur done");
     const npf_steam_id_1 = new Speech("enter ur steam id or pro file url hear, than ill see if we can find ur pro file...", npf_steam_id_2);

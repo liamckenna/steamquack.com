@@ -372,6 +372,7 @@ function InterpretResults(results) {
     }
 
     setTimeout(() => {
+        i = 0;
         Update_Display();
         Begin_Speech(perscription_1);
         generated = true;

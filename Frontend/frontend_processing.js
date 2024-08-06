@@ -80,12 +80,12 @@
             //slots[j].querySelector(".game_name").onclick = visitSteamPage(games[i+j].id);
                 if (games[i + j].price == 0) {
                     slots[j].querySelector(".game_portrait").innerHTML = "<img src=" + games[i + j].hero_capsule_link +
-                    " draggable=\"false\"  >" + "<div class=\"game_info\" onclick=\"Speak_About_Game(" + (i + j) +
+                    " draggable=\"false\"  >" + "<div class=\"game_info\" ondblclick=\"visitSteamPage(" + games[i + j].id + ")\" onclick=\"Speak_About_Game(" + (i + j) +
                     ")\" onmouseout=\"On_Hover_Exit(this, " + (i + j) + ")\" onmouseover=\"On_Hover(this, " + (i + j) +
                     ")\" style=\"font-size: 5vmin\">" + "FREE" + "</div>";
                 } else {
                     slots[j].querySelector(".game_portrait").innerHTML = "<img src=" + games[i + j].hero_capsule_link +
-                    " draggable=\"false\"  >" + "<div class=\"game_info\" onclick=\"Speak_About_Game(" + (i + j) +
+                    " draggable=\"false\"  >" + "<div class=\"game_info\" ondblclick=\"visitSteamPage(" + games[i + j].id + ")\" onclick=\"Speak_About_Game(" + (i + j) +
                     ")\" onmouseout=\"On_Hover_Exit(this, " + (i + j) + ")\" onmouseover=\"On_Hover(this, " + (i + j) +
                     ")\">" + "   $" + games[i + j].price + "</div>";
                 }
