@@ -35,7 +35,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\lmcmc\AppData\Local\Temp\tmpae2dv22y.js
+// include: C:\Users\lmcmc\AppData\Local\Temp\tmp5h0tjoye.js
 
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
@@ -216,7 +216,7 @@ Module['FS_createPath']("/", "Data", true, true);
 
   })();
 
-// end include: C:\Users\lmcmc\AppData\Local\Temp\tmpae2dv22y.js
+// end include: C:\Users\lmcmc\AppData\Local\Temp\tmp5h0tjoye.js
 
 
 // Sometimes an existing Module object exists with properties
@@ -827,9 +827,9 @@ var tempI64;
 
 var ASM_CONSTS = {
   30904: ($0) => { console.log(UTF8ToString($0)); },  
- 30939: ($0) => { var url = UTF8ToString($0); const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; fetch(proxyUrl + url, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', 'Content-Type': 'application/json', 'Origin' : 'http://steamquack.com', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36' } }) .then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then(data => { var jsonString = JSON.stringify(data); ccall('fetchCallback', 'void', ['string'], [jsonString]); }) .catch(error => { console.error('Fetch error:', error); ccall('fetchCallback', 'void', ['string'], ['']); }); },  
- 31668: ($0) => { var url = UTF8ToString($0); fetch(url, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', 'Origin': 'http://steamquack.com' } }) .then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then(data => { var jsonString = JSON.stringify(data); ccall('fetchCallback', 'void', ['string'], [jsonString]); }) .catch(error => { console.error('Fetch error:', error); ccall('fetchCallback', 'void', ['string'], ['']); }); },  
- 32159: ($0) => { var url = UTF8ToString($0); const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; fetch(url, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', 'Origin': 'http://steamquack.com' } }) .then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then(data => { var jsonString = JSON.stringify(data); ccall('fetchCallback', 'void', ['string'], [jsonString]); }) .catch(error => { console.error('Fetch error:', error); ccall('fetchCallback', 'void', ['string'], ['']); }); }
+ 30939: ($0) => { var url = UTF8ToString($0); const proxyUrl = 'https://mighty-hamlet-40061-d4ec535abfb1.herokuapp.com/'; fetch(proxyUrl + url, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', 'Content-Type': 'application/json', 'Origin' : 'http://steamquack.com', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36' } }) .then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then(data => { var jsonString = JSON.stringify(data); ccall('fetchCallback', 'void', ['string'], [jsonString]); }) .catch(error => { console.error('Fetch error:', error); ccall('fetchCallback', 'void', ['string'], ['']); }); },  
+ 31687: ($0) => { var url = UTF8ToString($0); fetch(url, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', 'Origin': 'http://steamquack.com' } }) .then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then(data => { var jsonString = JSON.stringify(data); ccall('fetchCallback', 'void', ['string'], [jsonString]); }) .catch(error => { console.error('Fetch error:', error); ccall('fetchCallback', 'void', ['string'], ['']); }); },  
+ 32178: ($0) => { var url = UTF8ToString($0); const proxyUrl = 'https://proxy.steamquack.com/'; fetch(url, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', 'Origin': 'http://steamquack.com' } }) .then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.json(); }) .then(data => { var jsonString = JSON.stringify(data); ccall('fetchCallback', 'void', ['string'], [jsonString]); }) .catch(error => { console.error('Fetch error:', error); ccall('fetchCallback', 'void', ['string'], ['']); }); }
 };
 
 // end include: preamble.js
