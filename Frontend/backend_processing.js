@@ -15,10 +15,10 @@
     hardware_input: 0.0,
     funding_etc: 0.0,
     unknown: 0.0,
-    review_threshold: 100,
+    review_threshold: 2000,
     review_description_threshold: "N/A",
     review_score: 1.0,
-    recency: 0.5,
+    recency: 1.0,
     recommendation_count: 30,
     review_percent_threshold: 80,
     maximum_price: 70
@@ -120,6 +120,7 @@
     const response = await fetch(apiURL);
     if (!response.ok) {
     throw new Error('Network response was not ok ' + response.statusText);
+    Begin_Speech(refresh_request);
 }
     const data = await response.json();
     console.log(data); 
@@ -233,19 +234,19 @@
         var usernameElement = document.getElementById('name_area');
         if (usernameElement) {
             usernameElement.innerHTML = username;
-            
+            adjustFontSize(username);
         }
-        adjustFontSize();
+        
         greet_user_by_name_1.text = "well hello ther " + username + "! giv me a minut to read ur medical histury...";
         Begin_Speech(greet_user_by_name_1);
         
         callCreateAndEvaluateProfile();
     }
 
-    function adjustFontSize() {
+    function adjustFontSize(username) {
         console.log("ADJUSTING FONT SIZE");
         const nameSection = document.getElementById('name_area');
-        const nameLength = nameSection.innerText.length;
+        const nameLength = username.length;
         let fontSize;
       
         
@@ -259,7 +260,7 @@
             fontSize = '3.5vw';
         } else if (nameLength <= 35) {
             fontSize = '2.5vw';
-          } else {
+        } else {
             fontSize = '1.5vw';
         }
       

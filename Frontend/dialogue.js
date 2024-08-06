@@ -82,36 +82,33 @@
 
     const loading = new Speech("loading... this may take a handful of seconds...");
 
-    const greet_user_by_name_1 = new Speech("well hello ther USER! giv me a minut to read ur medical histury...");
+    const greet_user_by_name_1 = new Speech("well hello ther USER! giv me a minut to read ur medical historie...");
 
-    const invalid_2 = new Speech("whatevr..");
-    const invalid_1 = new Speech("innvalid", invalid_2);
+    const missing_input_1 = new Speech("im gunna need ur name befor i can legily take u in.");
 
-    const fix_privacy_1 = new Speech("looks like ur profiel is privart");
+    const input_check_1 = new Speech("let me chek my reckords.");
 
-    const missing_input_1 = new Speech("im gunna need ur name befor i can leagaly take u in..");
-
-    const input_check_1 = new Speech("let me chek my reckords...");
-
-
-    const private_2 = new Speech("whatevr..");
-    const private_1 = new Speech("private", private_2);
-
-    const found_1 = new Speech("found ya! hello therrrr...");
+    const found_1 = new Speech("found ya! hello therrrr.");
 
     const begin_evaluation_1 = new Speech("lets see wat i can doo...");
 
     const complete_evaluation_1 = new Speech("yaayyyy i figyurd it owt!!!");
 
-    const perscription_1 = new Speech("i think thees mite do the trick. feel free to click on the pick churs if u wanna heer moar about them.")
+    const perscription_1 = new Speech("i think thees mite do the trick. feel free to click on the pick churs if u wanna heer moar about them.");
 
     const npf_steam_id_2 = new Speech("click the buton to the rite onse ur done");
-    const npf_steam_id_1 = new Speech("enter ur steam id or pro file url hear, than ill see if we can find ur pro file", npf_steam_id_2);
+    const npf_steam_id_1 = new Speech("enter ur steam id or pro file url hear, than ill see if we can find ur pro file...", npf_steam_id_2);
 
-    const greeting_4 = new Speech("plees fill out the new paishent form so i can <br>e-value ate youre case.", null)
-    const greeting_3 = new Speech("its truli unforchunate, but no need too worrey. uve come to the rite plase.", greeting_4)
-    const greeting_2 = new Speech("my name is Ducktor Gamez. i heard ur experiensing some simtoms of bordum.", greeting_3)
-    const greeting_1_0 = new Speech("hi ther! pleasd to make<br>ur aquaintense. (Click this text bubble to continue.)", greeting_2)
-    const greeting_1_1 = new Speech("howdye! welcom too my offise. (Click this text bubble to continue.)", greeting_2)
-    const greeting_1_2 = new Speech("well come! please, have a seet. (Click this text bubble to continue.)", greeting_2)
+    const greeting_4 = new Speech("plees fill out the new paishent form so i can <br>e-value ate youre case.");
+    const greeting_3 = new Speech("its truli unforchunate, but no need too worrey. uve come to the rite plase...", greeting_4)
+    const greeting_2 = new Speech("my name is Ducktor Gamez. i heard ur experiensing some simtoms of bordum...", greeting_3)
+    const greeting_1_0 = new Speech("hi ther! pleasd to make<br>ur aquaintense... (Click this text bubble to continue.)", greeting_2)
+    const greeting_1_1 = new Speech("howdye! welcom too my offise... (Click this text bubble to continue.)", greeting_2)
+    const greeting_1_2 = new Speech("well come! please, have a seet... (Click this text bubble to continue.)", greeting_2)
 
+    const private_3 = new Speech("for this too work i need u to open up too me.");
+    const private_2 = new Speech("go to ur steam profile, click on 'Edit Profile', go down to ur privacy settings, then set it to public...", private_3);
+    const private_1 = new Speech("i fownd ur acount but it looks like u hav it set to private...", private_2);
+
+    const invalid_2 = new Speech("i cant find pashents by their current nickname, but if u giv me the link to ur profile, that could wokr.");
+    const invalid_1 = new Speech("i culdnt find ur profile from the info u gav me...", invalid_2);

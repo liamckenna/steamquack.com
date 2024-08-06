@@ -71,6 +71,10 @@
             var display_count;
             if (returned_recommendation_count < 5) display_count = returned_recommendation_count;
             else display_count = 5;
+            if (returned_recommendation_count < 2) {
+                GenerateDefaultList();
+                return;
+            }
             for (let j = 0; j < display_count; j++) {
             slots[j].querySelector(".game_name").innerHTML = games[i + j].name;
             //slots[j].querySelector(".game_name").onclick = visitSteamPage(games[i+j].id);
@@ -178,17 +182,16 @@
     }
 
         async function Load_Site() {
-            adjustFontSize();
             console.log("json loaded: " + json_loaded);
             await Begin_Speech(loading);
-
+            resetInput();
+            resetSettings();
             await wait(1000);
     
             if (!json_loaded) {
                 callCreateGamesJson();
             }
-            resetInput();
-            resetSettings();
+
             End_Speech();
             await Wait(100);
             let greeting = getRandomInt(3);

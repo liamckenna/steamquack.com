@@ -88,6 +88,7 @@ body {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   font-size: 3vmin;
   color: #000;
+  height: 90%;
 
 }
 
@@ -567,6 +568,7 @@ img {
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
+  font-size: 0.5vw;
 }
 
 .arrow-column {
