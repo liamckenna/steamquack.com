@@ -94,7 +94,7 @@
 
     const complete_evaluation_1 = new Speech("yaayyyy i figyurd it owt!!!");
 
-    const perscription_1 = new Speech("heres wat i got! click on the pick churs if u wanna heer moar about them, or double click to go to there steam store page.");
+    const perscription_1 = new Speech("heres wat i got! click on the pick churs to heer moar, or double click to go to there steam store page.");
 
     const npf_steam_id_2 = new Speech("click the buton to the rite onse ur done");
     const npf_steam_id_1 = new Speech("enter ur steam id or pro file url hear, than ill see if we can find ur pro file...", npf_steam_id_2);
