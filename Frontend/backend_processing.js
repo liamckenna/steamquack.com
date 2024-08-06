@@ -243,6 +243,7 @@
     }
 
     function adjustFontSize() {
+        console.log("ADJUSTING FONT SIZE");
         const nameSection = document.getElementById('name_area');
         const nameLength = nameSection.innerText.length;
         let fontSize;
