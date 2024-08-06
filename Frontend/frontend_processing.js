@@ -87,10 +87,10 @@
                 }
             
         }
-            document.getElementById("left_arrow").innerHTML="<img src=\"./assets/Left%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Back()\"style=\"filter:invert(75%);cursor:pointer\">"
-            document.getElementById("right_arrow").innerHTML= "<img src=\"./assets/Right%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Forward()\"style=\"filter:invert(75%);cursor:pointer\">"
+            document.getElementById("left_arrow").innerHTML="<img src=\"./Assets/Left%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Back()\"style=\"filter:invert(75%);cursor:pointer\">"
+            document.getElementById("right_arrow").innerHTML= "<img src=\"./Assets/Right%20Arrow.png\" draggable=\"false\" onmouseout=\"Arrow_Hover_Exit(this)\" onmouseover=\"Arrow_Hover(this)\" onclick=\"Cycle_Forward()\"style=\"filter:invert(75%);cursor:pointer\">"
             if (i == 0) {
-            document.getElementById("left_arrow").innerHTML="<img src=\"./assets/Left%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Back()\"style=\"filter:invert(25%);cursor:auto\">"
+            document.getElementById("left_arrow").innerHTML="<img src=\"./Assets/Left%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Back()\"style=\"filter:invert(25%);cursor:auto\">"
         }
             if (i == returned_recommendation_count - 5) {
             document.getElementById("right_arrow").innerHTML= "<img src=\"./Assets/Right%20Arrow.png\" draggable=\"false\" onclick=\"Cycle_Forward()\"style=\"filter:invert(25%);cursor:auto\">"
