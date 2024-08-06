@@ -1,0 +1,3 @@
+C:/Users/lmcmc/CLionProjects/GameRecommenderFromSteamProfile/liamckenna.github.io/Backend/CMakeFiles/SteamQuack.dir
+C:/Users/lmcmc/CLionProjects/GameRecommenderFromSteamProfile/liamckenna.github.io/Backend/CMakeFiles/edit_cache.dir
+C:/Users/lmcmc/CLionProjects/GameRecommenderFromSteamProfile/liamckenna.github.io/Backend/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,598 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+button {
+  border: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.pharmacy_side {
+  position: absolute;
+  right: 5%;
+  margin-bottom: 5%;
+  width: 25%;
+  height: 90%;
+  padding-right: 3%;
+}
+
+.pharmacy_sign {
+  align-items: flex-end;
+  font-size: 3vh;
+  height: 30%;
+  width: 100%;
+  img{
+    height:100%;
+  }
+  margin-bottom: 25%;
+}
+
+.duck_area {
+  bottom:5%;
+  height: 60%;
+  margin-top: 10%;
+  img {
+    height: 100%;
+  }
+}
+
+.speech_bubble {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 17.5%;
+  right: 22.5%;
+  width: 22.5%;
+  height: 35%;
+}
+
+.speech_bubble img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  cursor: pointer;
+}
+
+.speech_bubble p {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 3vmin;
+  color: #000;
+
+}
+
+.options {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 15%;
+  height: 90%;
+
+
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+
+
+.input-container {
+
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 5%;
+  justify-content: center;
+}
+
+input[type=text] {
+  width: 70%;
+  height: 40px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1.1vw;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 20px;
+
+}
+
+.name_check_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 15%;
+  background-color: #48bfff42;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-size: 2.5vmin;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.name_check_button:hover {
+  background-color: #00a6ffb0;
+}
+
+.settings-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70%;
+}
+
+.slider-container {
+  align-items: flex-start;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100%;
+  width: 80%;
+}
+
+.numerical_slider {
+  margin: 1%;
+  height: 7%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slider {
+  margin: 1%;
+  height: 6%;
+  width:100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.numerical_slider label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  font-size: 1.1vw;
+  text-align: center; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+.slider label {
+
+  width: 100%;
+  height: 100%;
+  font-size: 1.1vw;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+
+.numerical_slider input[type="range"] {
+  width: 80%; 
+  height: 100%;
+}
+
+.slider input[type="range"] {
+  width: 100%; 
+  height: 100%;
+}
+
+.numerical_slider span {
+  font-size: 1.2vw;
+}
+
+.slider_container {
+
+  display: flex;
+  align-items: center;
+  font-size: 1.1vw;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; 
+}
+
+
+
+
+.id_input {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 4.5vmin;
+  border-radius: 100%;
+}
+
+.recommendation_generation_button_wrapper {
+  justify-content: center;
+  margin-top: 5%;
+  height: 12.5%;
+  align-items: center;
+  display: flex;
+}
+
+
+.recommendation_generation_button {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  display: flex;
+  background-color: #48bfff42;
+  width: 80%;
+  visibility: hidden;
+
+  font-size: 1.4vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 5%;
+  transition: background-color 0.25s;
+  border-radius: 70px;
+  color: #040404;
+}
+
+.recommendation_generation_button:hover {
+  cursor: pointer;
+  background-color: #00a6ffb0;
+}
+
+.row_container {
+  position: absolute;
+  top: 60%;
+  left: 12.5%;
+  right: 20%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 91%;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.arrow_column {
+  display: flex;
+  height: 100%;
+  width: 4.5%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.arrow_area_p1 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow_area_p2 {
+  display: flex;
+  margin-top: 50%;
+  height: 70%;
+  width: 100%;
+  margin-bottom: 15%;
+  text-align: center;
+  align-items: center;
+img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.25s;
+}
+}
+
+.game_column {
+  width: 18%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.game_portrait {
+  display: flex;
+  margin-top: 15%;
+  height: 70%;
+  width: 100%;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  filter: none;
+  transition: filter 0.25s;
+  z-index: 0;
+  font-size: 5vh;
+  white-space: pre-line;
+img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.25s;
+}
+}
+
+.game_portrait:hover img {
+  filter: brightness(0.25) blur(1px);
+}
+
+.game_info {
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0);
+  transition: color 0.25s;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 8vmin; 
+}
+
+.game_info:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.game_name {
+
+  height: 20%;
+  font-size: 2.2vmin;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.column_spacer {
+  width: 3%;
+}
+
+.horizontal_buffer {
+  width: 3%;
+  height: 100%;
+  background-color: white;
+}
+
+.vertical_buffer {
+  height: 5%;
+}
+
+
+.menu-wrapper {
+  position: absolute;
+  top: 6.5%; 
+  left: 23.5%; 
+  width: 45.5%; 
+  height: 52.5%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  padding: 10px;
+  width: 100%;
+  position: relative; 
+}
+
+.profile-pic-container {
+  position: absolute;
+  top: 6.25%; 
+  right: 4%; 
+  height: 30%; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8); 
+  height: 27.5%;
+}
+
+.profile-section {
+  background-color: white;
+  border: 2px solid black; 
+  padding: 10px;
+  border-radius: 80px; 
+  height: 37.5%;
+  align-items: center;
+}
+
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.name-section {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 8vw;
+  color: black;
+  width: 85%;
+  padding-right: 10px; 
+}
+
+.tag-carousel-wrapper {
+  position: absolute;
+  top: 55%; 
+  left: 0%; 
+  width: 100%; 
+  height: 40%; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tag-carousel {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tag-row {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-column {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  background-color: white;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 1%;
+  border: 2px solid black;
+}
+
+.tag-category {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+  font-size: 1.2vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10%;
+
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 15%;
+}
+
+.tag-set {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80%;
+}
+
+.tag {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  height: 20%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.arrow-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.arrow-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-area img {
+  transition: filter 0.25s;
+  height: 50%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-carousel-label {
+
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  margin-top: 1.5%;
+}
