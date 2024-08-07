@@ -366,7 +366,7 @@ function InterpretResults(results) {
         var release_date = results_json.top_picks[i].release_date;
         var review_count = results_json.top_picks[i].review_count;
         var name = results_json.top_picks[i].name;
-        var price = results_json.top_picks[i].msrp / 100;
+        var price = (results_json.top_picks[i].msrp - (results_json.top_picks[i].msrp % 100)) / 100;
         const game = new Game(id, name, score, price, release_date, review_count, review_percentage);
         games.push(game);
     }
