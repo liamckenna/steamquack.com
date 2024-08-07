@@ -80,13 +80,13 @@
 
     //to-do
     
-    var return_tags_3 = new Speech("");
+
     const return_tags_2 = new Speech("take a look at ur top tag categoreys!");
     const return_tags_1 = new Speech("iv lookd over ur profil... hear is my annalisis.", return_tags_2);
 
     const refresh_request = new Speech("sum thing went wrong. pleas refresh the page!");
 
-    const loading = new Speech("loading... this may take a handful of seconds...");
+    const loading = new Speech("loading... this may take a handful of seconds... (if it doesnt something went wrong)");
 
     const greet_user_by_name_1 = new Speech("well hello ther USER! giv me a minut to read ur medical historie...");
 
@@ -103,7 +103,7 @@
     const perscription_2 = new Speech("click on the pick churs to heer moar, or double click to go to the steam store page.");
     const perscription_1 = new Speech("just wat the ducktor ordered! take a look...", perscription_2);
 
-     
+
     const npf_steam_id_2 = new Speech("click the buton to the rite onse ur done");
     const npf_steam_id_1 = new Speech("enter ur steam id or pro file url hear, than ill see if we can find ur pro file...", npf_steam_id_2);
 
