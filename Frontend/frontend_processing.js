@@ -194,19 +194,9 @@
 
             End_Speech();
             await Wait(100);
-            let greeting = getRandomInt(3);
-            var greeting_line;
-            if (greeting == 0) {
-            greeting_line = greeting_1_0;
-        } else if (greeting == 1) {
-            greeting_line = greeting_1_1;
-        } else if (greeting == 2) {
-            greeting_line = greeting_1_2;
-        }
             document.getElementById("duck").innerHTML = "<img src=\"./Assets/Ducktor%20Mouth%20Open%20(Draft).png\" draggable=\"false\" style=\"display: none;\"> " +
             "<img src=\"./Assets/Ducktor%20Idle%20(Draft).png\" draggable=\"false\" style=\"display: flex;\">"
-
-            Begin_Speech(greeting_line);
+            chooseRandomDialogue(greetings);
         }
 
 
@@ -254,3 +244,4 @@
 function visitSteamPage(id) {
   window.open("https://store.steampowered.com/app/" + id, '_blank');
 }
+

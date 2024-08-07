@@ -7,6 +7,12 @@
             this.beginning = null;
         }
     }
+
+    function chooseRandomDialogue(selection) {
+        let range = selection.length;
+        let choice = getRandomInt(range);
+        Begin_Speech(selection[choice]);
+    }
     
     //done
 
@@ -94,8 +100,10 @@
 
     const complete_evaluation_1 = new Speech("yaayyyy i figyurd it owt!!!");
 
-    const perscription_1 = new Speech("heres wat i got! click on the pick churs to heer moar, or double click to go to there steam store page.");
+    const perscription_2 = new Speech("click on the pick churs to heer moar, or double click to go to the steam store page.");
+    const perscription_1 = new Speech("just wat the ducktor ordered! take a look...", perscription_2);
 
+     
     const npf_steam_id_2 = new Speech("click the buton to the rite onse ur done");
     const npf_steam_id_1 = new Speech("enter ur steam id or pro file url hear, than ill see if we can find ur pro file...", npf_steam_id_2);
 
@@ -105,6 +113,8 @@
     const greeting_1_0 = new Speech("hi ther! pleasd to make<br>ur aquaintense... (Click this text bubble to continue.)", greeting_2)
     const greeting_1_1 = new Speech("howdye! welcom too my offise... (Click this text bubble to continue.)", greeting_2)
     const greeting_1_2 = new Speech("well come! please, have a seet... (Click this text bubble to continue.)", greeting_2)
+    let greetings = [];
+    greetings.push(greeting_1_0, greeting_1_1, greeting_1_2);
 
     const private_3 = new Speech("for this too work i need u to open up too me.");
     const private_2 = new Speech("go to ur steam profile, click on 'Edit Profile', go down to ur privacy settings, then set it to public...", private_3);
